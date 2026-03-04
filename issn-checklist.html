@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ISSN Compliance Checklist — Press Council of Maharashtra</title>
+  <link rel="stylesheet" href="assets/css/journal.css" />
+  <style>
+    body {
+      font-family: Arial, 'Helvetica Neue', sans-serif;
+      background: #f0ede6;
+      margin: 0;
+      padding: 0;
+    }
+    .checklist-toolbar {
+      background: #1a3a5c;
+      color: white;
+      padding: 12px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .checklist-toolbar span {
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .checklist-toolbar button {
+      background: #c8a84b;
+      color: #1a1a1a;
+      border: none;
+      padding: 7px 18px;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+    .progress-bar-wrap {
+      background: #0d2137;
+      padding: 10px 30px;
+    }
+    .progress-label {
+      font-size: 12px;
+      color: #c8a84b;
+      font-family: monospace;
+      margin-bottom: 5px;
+    }
+    .progress-bar {
+      width: 100%;
+      background: rgba(255,255,255,0.1);
+      height: 8px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: #4caf50;
+      width: 0%;
+      transition: width 0.4s ease;
+    }
+    @media print {
+      .checklist-toolbar, .progress-bar-wrap { display: none; }
+      body { background: white; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="checklist-toolbar">
+    <span>ISSN Compliance Checklist — Press Council of Maharashtra</span>
+    <button onclick="window.print()">&#128424; Print Checklist</button>
+  </div>
+
+  <div class="progress-bar-wrap">
+    <div class="progress-label" id="prog-label">Progress: 0 / 0 items completed</div>
+    <div class="progress-bar"><div class="progress-fill" id="prog-fill"></div></div>
+  </div>
+
+  <div class="checklist-wrapper">
+
+    <h1>ISSN Compliance Verification Checklist</h1>
+    <div class="cw-sub">
+      Press Council of Maharashtra &nbsp;|&nbsp; Complete all items before replying to the ISSN authority.<br>
+      Items marked <strong style="color:#c62828;">CRITICAL</strong> are primary rejection risks if incomplete.
+    </div>
+
+    <!-- ============================================================
+         CATEGORY 1: PUBLICATION IDENTITY
+    ============================================================ -->
+    <div class="checklist-category">
+      <div class="cc-header">
+        Publication Identity
+        <span class="cc-risk-critical">CRITICAL — Rejection Risk</span>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c1-1" onchange="updateProgress()">
+        <label class="cc-item-text" for="c1-1">
+          <div class="cc-title">Publication title is clearly and prominently displayed on the homepage.</div>
+          <div class="cc-note">Must appear as the main heading — not embedded in a logo or image. Text must be selectable/readable by search engines.</div>
+          <div class="cc-critical">&#9632; CRITICAL — Missing title is the #1 reason for ISSN rejection.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c1-2" onchange="updateProgress()">
+        <label class="cc-item-text" for="c1-2">
+          <div class="cc-title">Title on website exactly matches the title on the ISSN application form.</div>
+          <div class="cc-note">Character-for-character match including punctuation, capitalisation, and any subtitle.</div>
+          <div class="cc-critical">&#9632; CRITICAL — Any mismatch results in application rejection.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c1-3" onchange="updateProgress()">
+        <label class="cc-item-text" for="c1-3">
+          <div class="cc-title">Title is visible and indexed on every page of the website (ideally in the header or masthead).</div>
+          <div class="cc-note">ISSN authority checks all linked pages, not just the homepage.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c1-4" onchange="updateProgress()">
+        <label class="cc-item-text" for="c1-4">
+          <div class="cc-title">The ISSN number (once assigned) is displayed on the homepage, journal issue pages, and each article PDF.</div>
+          <div class="cc-note">Format: ISSN XXXX-XXXX. Must appear in footer or masthead of every page once issued.</div>
+        </label>
+      </div>
+
+    </div>
+
+    <!-- ============================================================
+         CATEGORY 2: PUBLISHER INFORMATION
+    ============================================================ -->
+    <div class="checklist-category">
+      <div class="cc-header">
+        Publisher Information
+        <span class="cc-risk-critical">CRITICAL — Rejection Risk</span>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c2-1" onchange="updateProgress()">
+        <label class="cc-item-text" for="c2-1">
+          <div class="cc-title">Full legal name of publisher is explicitly stated: "Press Council of Maharashtra".</div>
+          <div class="cc-note">Must appear in full — abbreviations (PCM) alone are insufficient.</div>
+          <div class="cc-critical">&#9632; CRITICAL</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c2-2" onchange="updateProgress()">
+        <label class="cc-item-text" for="c2-2">
+          <div class="cc-title">Complete postal address of the publisher is displayed and matches the ISSN application form exactly.</div>
+          <div class="cc-note">Include: building/street, ward/area, city, district, state, PIN code, India.</div>
+          <div class="cc-critical">&#9632; CRITICAL — Address mismatch causes immediate rejection.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c2-3" onchange="updateProgress()">
+        <label class="cc-item-text" for="c2-3">
+          <div class="cc-title">Owner is listed as "Press Council of Maharashtra" — not an individual's name.</div>
+          <div class="cc-note">ISSN requirement: publishing body must be an institution, not a named person.</div>
+          <div class="cc-critical">&#9632; CRITICAL — Personal name in "Owner" field = rejection.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c2-4" onchange="updateProgress()">
+        <label class="cc-item-text" for="c2-4">
+          <div class="cc-title">No personal name (e.g., General Secretary name) appears in the "Publishing Body" field or publisher section.</div>
+          <div class="cc-note">Publishing body field must contain only the institutional name. Executive names may appear under "Officials" separately.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c2-5" onchange="updateProgress()">
+        <label class="cc-item-text" for="c2-5">
+          <div class="cc-title">Contact email for the journal is an official institutional domain (not Gmail, Yahoo, Hotmail, etc.).</div>
+          <div class="cc-note">e.g., editor@presscouncil.in. Personal or free email services are not acceptable for ISSN registration.</div>
+          <div class="cc-critical">&#9632; CRITICAL</div>
+        </label>
+      </div>
+
+    </div>
+
+    <!-- ============================================================
+         CATEGORY 3: HOMEPAGE JOURNAL METADATA
+    ============================================================ -->
+    <div class="checklist-category">
+      <div class="cc-header">
+        Homepage Journal Metadata
+        <span class="cc-risk-important">IMPORTANT</span>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c3-1" onchange="updateProgress()">
+        <label class="cc-item-text" for="c3-1">
+          <div class="cc-title">Starting Year / Year of Establishment is visible on the homepage.</div>
+          <div class="cc-note">Must match the year on the ISSN application.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c3-2" onchange="updateProgress()">
+        <label class="cc-item-text" for="c3-2">
+          <div class="cc-title">Publication Frequency is stated (e.g., Quarterly, Monthly, Bi-Annual).</div>
+          <div class="cc-note">Must be one of the ISSN-recognised frequency categories and match the application.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c3-3" onchange="updateProgress()">
+        <label class="cc-item-text" for="c3-3">
+          <div class="cc-title">Format is stated: Online / Print / Both (Online and Print).</div>
+          <div class="cc-note">Separate ISSN numbers are issued for print and online formats.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c3-4" onchange="updateProgress()">
+        <label class="cc-item-text" for="c3-4">
+          <div class="cc-title">Subject / Discipline is clearly stated on the homepage.</div>
+          <div class="cc-note">e.g., Media Studies, Journalism, Press Freedom. Must match the ISSN application subject field.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c3-5" onchange="updateProgress()">
+        <label class="cc-item-text" for="c3-5">
+          <div class="cc-title">Language(s) of publication is stated (e.g., English, Marathi, Both).</div>
+          <div class="cc-note">ISSN assigns language-specific metadata to the record.</div>
+        </label>
+      </div>
+
+    </div>
+
+    <!-- ============================================================
+         CATEGORY 4: FIRST ISSUE / CONTENT REQUIREMENT
+    ============================================================ -->
+    <div class="checklist-category">
+      <div class="cc-header">
+        First Issue &amp; Content Requirement
+        <span class="cc-risk-critical">CRITICAL — Rejection Risk</span>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c4-1" onchange="updateProgress()">
+        <label class="cc-item-text" for="c4-1">
+          <div class="cc-title">At least ONE complete issue has been published and is publicly accessible at the time of ISSN application.</div>
+          <div class="cc-note">ISSN cannot be allocated to a journal that has not yet published. The issue must be live, not a placeholder.</div>
+          <div class="cc-critical">&#9632; CRITICAL — Unpublished journals are ineligible for ISSN.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c4-2" onchange="updateProgress()">
+        <label class="cc-item-text" for="c4-2">
+          <div class="cc-title">First issue contains a minimum of 5 original articles (ISSN India requirement).</div>
+          <div class="cc-note">Full-text PDFs must be accessible. Abstracts-only do not count.</div>
+          <div class="cc-critical">&#9632; CRITICAL</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c4-3" onchange="updateProgress()">
+        <label class="cc-item-text" for="c4-3">
+          <div class="cc-title">Each article has: Title, Author name(s), Institutional affiliation, Abstract, and full text (PDF).</div>
+          <div class="cc-note">Articles with missing metadata will invalidate the issue for ISSN purposes.</div>
+          <div class="cc-critical">&#9632; CRITICAL</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c4-4" onchange="updateProgress()">
+        <label class="cc-item-text" for="c4-4">
+          <div class="cc-title">Issue page shows: Volume, Issue number, Publication date, Page numbers.</div>
+          <div class="cc-note">Sequential pagination is preferred for academic citation purposes.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c4-5" onchange="updateProgress()">
+        <label class="cc-item-text" for="c4-5">
+          <div class="cc-title">PDF articles include journal title, ISSN (once assigned), volume, issue, and page numbers in the header or footer.</div>
+          <div class="cc-note">This is an ISSN best-practice requirement for academic bibliographic records.</div>
+        </label>
+      </div>
+
+    </div>
+
+    <!-- ============================================================
+         CATEGORY 5: EDITORIAL BOARD
+    ============================================================ -->
+    <div class="checklist-category">
+      <div class="cc-header">
+        Editorial Board
+        <span class="cc-risk-critical">CRITICAL — Rejection Risk</span>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c5-1" onchange="updateProgress()">
+        <label class="cc-item-text" for="c5-1">
+          <div class="cc-title">Editorial Board page exists and is publicly accessible (not behind login).</div>
+          <div class="cc-note">ISSN authority will visit this page directly. Must load without authentication.</div>
+          <div class="cc-critical">&#9632; CRITICAL</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c5-2" onchange="updateProgress()">
+        <label class="cc-item-text" for="c5-2">
+          <div class="cc-title">A minimum of 5 editorial board members are listed.</div>
+          <div class="cc-note">Fewer than 5 members is a common ISSN rejection reason for new journals in India.</div>
+          <div class="cc-critical">&#9632; CRITICAL</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c5-3" onchange="updateProgress()">
+        <label class="cc-item-text" for="c5-3">
+          <div class="cc-title">Each board member listing includes: Full name, Institutional designation, Department, Institution name.</div>
+          <div class="cc-note">Generic titles like "Expert" or "Advisor" without institutional context are insufficient.</div>
+          <div class="cc-critical">&#9632; CRITICAL</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c5-4" onchange="updateProgress()">
+        <label class="cc-item-text" for="c5-4">
+          <div class="cc-title">Full official postal address is included for each editorial board member or for their institution at minimum.</div>
+          <div class="cc-note">Must include institution name, city, state, PIN, country.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c5-5" onchange="updateProgress()">
+        <label class="cc-item-text" for="c5-5">
+          <div class="cc-title">Institutional email addresses are listed for board members — NO Gmail, Yahoo, Hotmail, or similar free services.</div>
+          <div class="cc-note">e.g., name@mu.ac.in, name@unipune.ac.in. Free email addresses signal lack of institutional standing.</div>
+          <div class="cc-critical">&#9632; CRITICAL</div>
+        </label>
+      </div>
+
+    </div>
+
+    <!-- ============================================================
+         CATEGORY 6: LEGAL & COMPLIANCE POLICIES
+    ============================================================ -->
+    <div class="checklist-category">
+      <div class="cc-header">
+        Legal &amp; Compliance Policies
+        <span class="cc-risk-important">IMPORTANT</span>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c6-1" onchange="updateProgress()">
+        <label class="cc-item-text" for="c6-1">
+          <div class="cc-title">Copyright notice is published on the journal website.</div>
+          <div class="cc-note">Must specify who owns the copyright (author or publisher) and the terms of use.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c6-2" onchange="updateProgress()">
+        <label class="cc-item-text" for="c6-2">
+          <div class="cc-title">Disclaimer statement is published.</div>
+          <div class="cc-note">Clarifies that views in articles are the authors' own and not the publisher's.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c6-3" onchange="updateProgress()">
+        <label class="cc-item-text" for="c6-3">
+          <div class="cc-title">Publication ethics statement (aligned with COPE guidelines) is published.</div>
+          <div class="cc-note">Covers duties of authors, editors, and reviewers. COPE alignment is expected by ISSN India.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c6-4" onchange="updateProgress()">
+        <label class="cc-item-text" for="c6-4">
+          <div class="cc-title">Peer review policy is published, specifying type of review (double-blind preferred).</div>
+          <div class="cc-note">Must describe the process, number of reviewers, and approximate turnaround time.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c6-5" onchange="updateProgress()">
+        <label class="cc-item-text" for="c6-5">
+          <div class="cc-title">Plagiarism policy is published with acceptable similarity thresholds stated.</div>
+          <div class="cc-note">Industry standard: overall &lt;15%, single source &lt;5%.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c6-6" onchange="updateProgress()">
+        <label class="cc-item-text" for="c6-6">
+          <div class="cc-title">Open access statement is published (if the journal is open access).</div>
+          <div class="cc-note">If APC (article processing charge) is nil, this must be stated. Licence type (e.g., CC BY-NC 4.0) must be specified.</div>
+        </label>
+      </div>
+
+    </div>
+
+    <!-- ============================================================
+         CATEGORY 7: TECHNICAL / ONLINE REQUIREMENTS
+    ============================================================ -->
+    <div class="checklist-category">
+      <div class="cc-header">
+        Technical &amp; Online Requirements
+        <span class="cc-risk-important">IMPORTANT</span>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c7-1" onchange="updateProgress()">
+        <label class="cc-item-text" for="c7-1">
+          <div class="cc-title">The journal website is publicly accessible (no login required to view content).</div>
+          <div class="cc-note">ISSN verifiers must be able to access all journal pages without creating an account.</div>
+          <div class="cc-critical">&#9632; CRITICAL</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c7-2" onchange="updateProgress()">
+        <label class="cc-item-text" for="c7-2">
+          <div class="cc-title">The website URL submitted in the ISSN application resolves correctly and loads without errors.</div>
+          <div class="cc-note">Broken links, redirect loops, or error pages will halt the verification process.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c7-3" onchange="updateProgress()">
+        <label class="cc-item-text" for="c7-3">
+          <div class="cc-title">Article PDFs are downloadable directly without authentication or CAPTCHA.</div>
+          <div class="cc-note">Verifiers download sample articles as part of their review process.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c7-4" onchange="updateProgress()">
+        <label class="cc-item-text" for="c7-4">
+          <div class="cc-title">The website is maintained consistently and does not display "under construction" notices.</div>
+          <div class="cc-note">Placeholder pages should be replaced with actual content before ISSN submission.</div>
+        </label>
+      </div>
+
+      <div class="cc-item">
+        <input type="checkbox" id="c7-5" onchange="updateProgress()">
+        <label class="cc-item-text" for="c7-5">
+          <div class="cc-title">The homepage is in a language consistent with the declared publication language.</div>
+          <div class="cc-note">If the journal is declared English, the homepage must principally be in English.</div>
+        </label>
+      </div>
+
+    </div>
+
+    <!-- ============================================================
+         SUMMARY
+    ============================================================ -->
+    <div style="background:#1a3a5c;color:white;padding:20px 24px;margin-top:10px;font-family:Arial,sans-serif;">
+      <strong style="font-size:14px;display:block;margin-bottom:12px;color:#c8a84b;text-transform:uppercase;letter-spacing:1px;">
+        Critical Rejection Risk Summary
+      </strong>
+      <p style="font-size:13px;line-height:1.8;color:#c0d0e0;">
+        The following issues are the <strong style="color:#ff6b6b;">most common reasons for ISSN rejection</strong> in India.
+        Ensure every item is resolved before submitting your application reply:
+      </p>
+      <ol style="font-size:13px;line-height:2;color:#c0d0e0;padding-left:20px;margin-top:8px;">
+        <li>Website title does not match application title exactly.</li>
+        <li>Publisher address on website differs from address on application form.</li>
+        <li>Personal name (not institutional name) listed as owner or publishing body.</li>
+        <li>Gmail / Yahoo used as editorial contact email instead of institutional domain.</li>
+        <li>First issue not yet published, or contains fewer than 5 articles.</li>
+        <li>Editorial board has fewer than 5 members, OR members lack institutional affiliations/addresses.</li>
+        <li>Journal website requires login to access articles or editorial board.</li>
+        <li>Journal information block (Year, Frequency, Format, Subject, Language) missing from homepage.</li>
+      </ol>
+    </div>
+
+  </div><!-- /checklist-wrapper -->
+
+  <script>
+    function updateProgress() {
+      const all = document.querySelectorAll('.cc-item input[type="checkbox"]');
+      const checked = document.querySelectorAll('.cc-item input[type="checkbox"]:checked');
+      const pct = all.length ? Math.round((checked.length / all.length) * 100) : 0;
+      document.getElementById('prog-fill').style.width = pct + '%';
+      document.getElementById('prog-label').textContent =
+        'Progress: ' + checked.length + ' / ' + all.length + ' items completed (' + pct + '%)';
+    }
+    updateProgress();
+  </script>
+
+</body>
+</html>

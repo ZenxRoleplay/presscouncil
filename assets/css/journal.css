@@ -1,0 +1,820 @@
+/* ===================================================================
+   PRESS COUNCIL OF MAHARASHTRA — ACADEMIC JOURNAL STYLESHEET
+   ISSN Compliance: Journal-Grade Academic Formatting
+   Version: 1.0 | Last Revised: 2026
+   =================================================================== */
+
+/* ---------------------------------------------------------------
+   CSS Custom Properties
+--------------------------------------------------------------- */
+:root {
+  --navy:          #1a3a5c;
+  --navy-dark:     #0d2137;
+  --navy-mid:      #25527d;
+  --crimson:       #8b0000;
+  --gold:          #c8a84b;
+  --bg-offwhite:   #f8f7f4;
+  --bg-light:      #f0ede6;
+  --border:        #c8b89a;
+  --border-light:  #ddd8cc;
+  --text-primary:  #1a1a1a;
+  --text-muted:    #4a4a4a;
+  --text-light:    #777777;
+  --white:         #ffffff;
+  --placeholder-bg:     #fff8e1;
+  --placeholder-border: #f0a500;
+  --font-body:     'Georgia', 'Times New Roman', serif;
+  --font-heading:  'Arial', 'Helvetica Neue', sans-serif;
+  --font-mono:     'Courier New', monospace;
+}
+
+/* ---------------------------------------------------------------
+   ISSN Compliance Banner — Journal Masthead
+--------------------------------------------------------------- */
+.journal-masthead {
+  background: var(--navy-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 6px 20px;
+  font-family: var(--font-heading);
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-bottom: 3px solid var(--gold);
+}
+
+.journal-title-banner {
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+  padding: 22px 30px 16px;
+  border-bottom: 4px double var(--gold);
+}
+
+.journal-title-banner .jt-label {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.journal-title-banner .jt-name {
+  font-family: var(--font-body);
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+  margin-bottom: 6px;
+}
+
+.journal-title-banner .jt-subtitle {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  color: #b8cfe8;
+  letter-spacing: 1px;
+}
+
+.journal-title-banner .jt-issn {
+  display: inline-block;
+  margin-top: 10px;
+  background: var(--crimson);
+  color: var(--white);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: bold;
+  padding: 4px 14px;
+  letter-spacing: 1px;
+  border-radius: 2px;
+}
+
+/* ---------------------------------------------------------------
+   Journal Information Block (Homepage)
+--------------------------------------------------------------- */
+.journal-info-block {
+  background: var(--bg-offwhite);
+  border-top: 4px solid var(--navy);
+  border-bottom: 4px solid var(--navy);
+  padding: 28px 30px;
+  margin: 0;
+}
+
+.journal-info-block h2 {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--navy);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+}
+
+.jib-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0;
+  border: 1px solid var(--border-light);
+  background: var(--white);
+}
+
+.jib-row {
+  display: flex;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.jib-row:last-child {
+  border-bottom: none;
+}
+
+.jib-label {
+  background: var(--bg-light);
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--navy);
+  padding: 10px 14px;
+  width: 200px;
+  min-width: 200px;
+  border-right: 1px solid var(--border-light);
+}
+
+.jib-value {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-primary);
+  padding: 10px 16px;
+  flex: 1;
+}
+
+.jib-value.placeholder {
+  background: var(--placeholder-bg);
+  border-left: 3px solid var(--placeholder-border);
+  color: #7a5200;
+  font-style: italic;
+}
+
+/* ---------------------------------------------------------------
+   Publisher Details Section (Homepage)
+--------------------------------------------------------------- */
+.publisher-details-section {
+  background: var(--white);
+  padding: 28px 30px;
+  border-bottom: 2px solid var(--border-light);
+}
+
+.publisher-details-section h2 {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--navy);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.pub-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.pub-detail-card {
+  border: 1px solid var(--border-light);
+  padding: 18px 20px;
+  background: var(--bg-offwhite);
+}
+
+.pub-detail-card h3 {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--crimson);
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.pub-detail-card p,
+.pub-detail-card address {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-primary);
+  line-height: 1.8;
+  font-style: normal;
+}
+
+.pub-detail-card.placeholder-card {
+  background: var(--placeholder-bg);
+  border-color: var(--placeholder-border);
+}
+
+.pub-detail-card.placeholder-card p {
+  color: #7a5200;
+  font-style: italic;
+}
+
+/* ---------------------------------------------------------------
+   Ownership Statement (ISSN Requirement)
+--------------------------------------------------------------- */
+.ownership-statement {
+  background: var(--navy-dark);
+  color: rgba(255,255,255,0.85);
+  padding: 6px 30px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 2px solid var(--gold);
+  letter-spacing: 0.01em;
+}
+
+.ownership-statement strong {
+  color: var(--gold);
+}
+
+/* ---------------------------------------------------------------
+   Editorial Board Page
+--------------------------------------------------------------- */
+.editorial-page-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: var(--font-body);
+}
+
+.editorial-page-header {
+  text-align: center;
+  border-bottom: 3px double var(--navy);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.editorial-page-header h1 {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.editorial-page-header .ep-journal-name {
+  font-size: 16px;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+.editorial-page-header .ep-issn {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--crimson);
+}
+
+.editorial-role-section {
+  margin-bottom: 36px;
+}
+
+.editorial-role-section h2 {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--white);
+  background: var(--navy);
+  padding: 8px 16px;
+  margin-bottom: 0;
+}
+
+.editorial-member-row {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  border: 1px solid var(--border-light);
+  border-top: none;
+  padding: 16px;
+  gap: 12px;
+  background: var(--white);
+  align-items: start;
+}
+
+.editorial-member-row:nth-child(even) {
+  background: var(--bg-offwhite);
+}
+
+.em-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--navy);
+  margin-bottom: 3px;
+}
+
+.em-designation {
+  font-size: 13px;
+  color: var(--crimson);
+  font-style: italic;
+}
+
+.em-dept {
+  font-size: 13px;
+  color: var(--text-primary);
+}
+
+.em-institution {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.em-email {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--navy-mid);
+  text-decoration: none;
+}
+
+.em-email:hover {
+  text-decoration: underline;
+}
+
+.em-address {
+  font-size: 12px;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.editorial-member-header {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  background: var(--bg-light);
+  padding: 8px 16px;
+  border: 1px solid var(--border-light);
+  border-top: none;
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--navy);
+  gap: 12px;
+}
+
+/* ---------------------------------------------------------------
+   Journal Issue / Archive Page
+--------------------------------------------------------------- */
+.issue-page-wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.issue-masthead {
+  border: 2px solid var(--navy);
+  padding: 20px 24px;
+  margin-bottom: 28px;
+  background: var(--bg-offwhite);
+}
+
+.issue-masthead h1 {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.issue-masthead .im-meta {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-family: var(--font-body);
+}
+
+.issue-masthead .im-title {
+  font-size: 13px;
+  color: var(--crimson);
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+.article-entry {
+  border: 1px solid var(--border-light);
+  margin-bottom: 20px;
+  background: var(--white);
+}
+
+.article-entry-header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 10px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-entry-header .ae-num {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.article-entry-header .ae-pages {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: #b8cfe8;
+}
+
+.article-entry-body {
+  padding: 18px 20px;
+}
+
+.article-entry-body .ae-title {
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--navy);
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.article-entry-body .ae-authors {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--crimson);
+  margin-bottom: 4px;
+}
+
+.article-entry-body .ae-affiliation {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.article-entry-body .ae-abstract-label {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.article-entry-body .ae-abstract {
+  font-size: 14px;
+  color: var(--text-primary);
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 14px;
+}
+
+.article-entry-body .ae-keywords {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 14px;
+}
+
+.article-entry-footer {
+  background: var(--bg-light);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-top: 1px solid var(--border-light);
+}
+
+.btn-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--crimson);
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 7px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-pdf:hover {
+  background: #6a0000;
+}
+
+.btn-abstract {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: var(--navy);
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 7px 16px;
+  border: 1px solid var(--navy);
+  cursor: pointer;
+}
+
+.article-doi {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-light);
+}
+
+/* ---------------------------------------------------------------
+   Journal Policies / Legal Page
+--------------------------------------------------------------- */
+.policies-wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: var(--font-body);
+}
+
+.policies-wrapper h1 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px double var(--navy);
+  padding-bottom: 14px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.policy-section {
+  margin-bottom: 32px;
+  border: 1px solid var(--border-light);
+}
+
+.policy-section-header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 10px 18px;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.policy-section-body {
+  padding: 20px 22px;
+  line-height: 1.9;
+  font-size: 14.5px;
+  color: var(--text-primary);
+  background: var(--white);
+}
+
+.policy-section-body p {
+  margin-bottom: 12px;
+}
+
+.policy-section-body ul {
+  padding-left: 22px;
+  margin-bottom: 12px;
+}
+
+.policy-section-body ul li {
+  margin-bottom: 6px;
+}
+
+.policy-section-body strong {
+  color: var(--navy);
+}
+
+/* ---------------------------------------------------------------
+   ISSN Compliance Footer Strip
+--------------------------------------------------------------- */
+.compliance-strip {
+  background: var(--navy-dark);
+  color: #c0d0e0;
+  padding: 20px 30px;
+}
+
+.compliance-strip-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.cs-col h4 {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold);
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(200,180,150,0.3);
+}
+
+.cs-col p,
+.cs-col address {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.8;
+  font-style: normal;
+  color: #aec4d8;
+}
+
+.cs-col a {
+  color: #aec4d8;
+  text-decoration: none;
+}
+
+.cs-col .cs-issn {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--white);
+  font-weight: bold;
+  background: rgba(255,255,255,0.08);
+  padding: 4px 10px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.compliance-copyright {
+  background: var(--navy-dark);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: #7a9ab8;
+  font-family: var(--font-heading);
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* ---------------------------------------------------------------
+   ISSN Checklist Page
+--------------------------------------------------------------- */
+.checklist-wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px 40px;
+  font-family: var(--font-body);
+}
+
+.checklist-wrapper h1 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.checklist-wrapper .cw-sub {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+.checklist-category {
+  margin-bottom: 28px;
+  border: 1px solid var(--border-light);
+}
+
+.cc-header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 10px 16px;
+  font-family: var(--font-heading);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cc-header .cc-risk-critical {
+  background: #c62828;
+  color: white;
+  font-size: 10px;
+  padding: 2px 8px;
+  letter-spacing: 1px;
+  border-radius: 2px;
+}
+
+.cc-header .cc-risk-important {
+  background: #e65100;
+  color: white;
+  font-size: 10px;
+  padding: 2px 8px;
+  letter-spacing: 1px;
+  border-radius: 2px;
+}
+
+.cc-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-light);
+  background: var(--white);
+}
+
+.cc-item:last-child {
+  border-bottom: none;
+}
+
+.cc-item:nth-child(even) {
+  background: var(--bg-offwhite);
+}
+
+.cc-item input[type="checkbox"] {
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: var(--navy);
+  flex-shrink: 0;
+}
+
+.cc-item-text {
+  flex: 1;
+}
+
+.cc-item-text .cc-title {
+  font-size: 14px;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+}
+
+.cc-item-text .cc-note {
+  font-size: 12px;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.cc-item-text .cc-critical {
+  font-size: 11px;
+  color: #c62828;
+  font-weight: bold;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+/* ---------------------------------------------------------------
+   Utility & Placeholder Styles
+--------------------------------------------------------------- */
+.fill-placeholder {
+  background: var(--placeholder-bg);
+  border: 1px dashed var(--placeholder-border);
+  padding: 2px 8px;
+  color: #7a5200;
+  font-style: italic;
+  font-size: 0.95em;
+  border-radius: 2px;
+}
+
+.section-divider {
+  height: 1px;
+  background: var(--border-light);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .pub-detail-grid { grid-template-columns: 1fr; }
+  .editorial-member-row { grid-template-columns: 1fr 1fr; }
+  .editorial-member-header { display: none; }
+  .compliance-strip-inner { grid-template-columns: 1fr; }
+  .jib-label { width: 140px; min-width: 140px; font-size: 11px; }
+  .issue-page-wrapper { padding: 20px 12px; }
+  .policies-wrapper { padding: 20px 12px; }
+}
+
+@media print {
+  .checklist-wrapper { max-width: 100%; margin: 0; }
+  .journal-masthead, .journal-title-banner { display: none; }
+  .cc-item { break-inside: avoid; }
+}

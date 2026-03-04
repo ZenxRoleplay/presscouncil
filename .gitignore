@@ -1,0 +1,11 @@
+# Logs & temp
+error_log
+*.tmp
+*.log
+
+# SQL dumps (don't expose DB backup publicly)
+docs/pcm_website.sql
+
+# Windows junk
+Thumbs.db
+Desktop.ini

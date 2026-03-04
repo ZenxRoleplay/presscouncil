@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>News Admin Panel</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+    .news-section { border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; }
+    .news-section h3 { margin-top: 0; }
+    .news-item { margin-bottom: 10px; padding: 10px; border: 1px dashed #ccc; }
+    input[type="text"], input[type="url"], textarea { width: 100%; margin: 5px 0; padding: 5px; }
+    button { padding: 5px 10px; margin-right: 5px; }
+  </style>
+</head>
+<body>
+
+<h2>News Admin Panel</h2>
+
+<div class="news-section" id="left-news">
+  <h3>Left News</h3>
+  <div id="left-items"></div>
+  <button onclick="addNews('left')">Add News</button>
+</div>
+
+<div class="news-section" id="right-news">
+  <h3>Right News</h3>
+  <div id="right-items"></div>
+  <button onclick="addNews('right')">Add News</button>
+</div>
+
+<button onclick="saveNews()">Save News</button>
+
+<script>
+let news = { left: [], right: [] };
+
+function loadNews() {
+  fetch('news.json')
+    .then(res => res.json())
+    .then(data => {
+      news = data;
+      ['left', 'right'].forEach(side => renderNews(side));
+    });
+}
+
+function renderNews(side) {
+  const container = document.getElementById(`${side}-items`);
+  container.innerHTML = '';
+  news[side].forEach((item, index) => {
+    const div = document.createElement('div');
+    div.className = 'news-item';
+    div.innerHTML = `
+      <select onchange="updateNewsType('${side}', ${index}, this.value)">
+        <option value="text" ${item.type === 'text' ? 'selected' : ''}>Text</option>
+        <option value="image" ${item.type === 'image' ? 'selected' : ''}>Image</option>
+        <option value="video" ${item.type === 'video' ? 'selected' : ''}>Video</option>
+      </select>
+      <input type="text" placeholder="Content URL or Text" value="${item.content}" oninput="updateNewsContent('${side}', ${index}, this.value)">
+      <input type="text" placeholder="Optional caption" value="${item.caption || ''}" oninput="updateNewsCaption('${side}', ${index}, this.value)">
+      <button onclick="deleteNews('${side}', ${index})">Delete</button>
+    `;
+    container.appendChild(div);
+  });
+}
+
+function addNews(side) {
+  news[side].push({ type: 'text', content: '', caption: '' });
+  renderNews(side);
+}
+
+function updateNewsType(side, index, value) {
+  news[side][index].type = value;
+}
+
+function updateNewsContent(side, index, value) {
+  news[side][index].content = value;
+}
+
+function updateNewsCaption(side, index, value) {
+  news[side][index].caption = value;
+}
+
+function deleteNews(side, index) {
+  news[side].splice(index, 1);
+  renderNews(side);
+}
+
+function saveNews() {
+  fetch('save_news.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(news)
+  }).then(() => alert('News saved successfully!'));
+}
+
+loadNews();
+</script>
+
+</body>
+</html>
