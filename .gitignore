@@ -9,3 +9,7 @@ docs/pcm_website.sql
 # Windows junk
 Thumbs.db
 Desktop.ini
+
+vendor/
+
+test-nirmala.pdf

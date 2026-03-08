@@ -154,13 +154,13 @@
     </p>
 
     <!-- ============================================================
-         VOLUME 1 — 2025
+         VOLUME 1 — 2026
     ============================================================ -->
     <div class="archive-volume">
       <div class="archive-volume-header">
         <span>&#128196;</span>
         Volume 1
-        <span class="av-year">2025</span>
+        <span class="av-year">2026</span>
       </div>
 
       <!-- Issue 1 Header Row -->
@@ -169,7 +169,7 @@
         <div class="ai-title" style="flex:1;">
           <strong style="color:#1a3a5c;">Special Inaugural Issue: Press Freedom, Media Ethics &amp; Journalism Practice in Maharashtra</strong>
           <div style="font-size:12px;color:#888;margin-top:3px;">
-            January 2025 &nbsp;|&nbsp; 5 Articles &nbsp;|&nbsp; Double-Blind Peer Reviewed &nbsp;|&nbsp;
+            January 2026 &nbsp;|&nbsp; 5 Articles &nbsp;|&nbsp; Double-Blind Peer Reviewed &nbsp;|&nbsp;
             ISSN (Online): <em style="color:#b36000;">Applied for / Pending</em>
           </div>
         </div>

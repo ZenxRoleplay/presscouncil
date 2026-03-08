@@ -27,7 +27,7 @@
     <div class="issue-masthead">
       <h1>Information of Press Council of Maharashtra</h1>
       <div class="im-meta">
-        <strong>Volume 1 &nbsp;|&nbsp; Issue 1 &nbsp;|&nbsp; January 2025</strong>
+        <strong>Volume 1 &nbsp;|&nbsp; Issue 1 &nbsp;|&nbsp; January 2026</strong>
         &nbsp;|&nbsp;
         ISSN (Online): <em style="color:#b36000;">Applied for / Pending</em>
         &nbsp;|&nbsp;
@@ -38,58 +38,42 @@
       </div>
     </div>
 
-    <!-- ADMIN NOTICE -->
-    <div style="background:#fff3cd;border:1px dashed #e8a700;padding:14px 18px;margin-bottom:28px;font-size:13px;color:#7a5200;font-family:Arial,sans-serif;">
-      <strong>&#9888; ADMIN NOTE:</strong> Replace all <em>[FILL: ...]</em> placeholders with real article data before ISSN submission.
-      All 5 articles must be fully published (accessible/downloadable) at the time of ISSN application.
-      Upload actual PDFs to <code>uploads/issues/vol1-issue1/</code> and update the href links below.
-    </div>
-
     <!-- ============================================================
          ARTICLE 1
     ============================================================ -->
     <div class="article-entry" id="art-001">
       <div class="article-entry-header">
         <span class="ae-num">Article 1 of 5</span>
-        <span class="ae-pages">Pages: <span class="fill-placeholder">[e.g., 1–12]</span></span>
+        <span class="ae-pages">Pages: 1–14</span>
       </div>
       <div class="article-entry-body">
         <div class="ae-title">
-          [FILL: Article Title — e.g., Press Freedom and Democratic Governance: An Analysis of Regional Media in Maharashtra]
+          The Post-COVID Crisis in Maharashtra's Journalism and Newspaper Industry
         </div>
         <div class="ae-authors">
-          [FILL: Author Name(s) — e.g., Dr. A. B. Sharma, Prof. C. D. Patil]
+          Adv. Iliyas Abdulmajeed Khan
         </div>
         <div class="ae-affiliation">
-          [FILL: Department of Mass Communication, Name of University / Institution, City, Maharashtra, India]
+          Information Of Press Council of Maharashtra, Mumbai, Maharashtra, India
         </div>
         <div class="ae-abstract-label">Abstract</div>
         <div class="ae-abstract">
-          [FILL: Article abstract of 150–250 words. This should summarize the research problem, methodology,
-          findings, and conclusion. Example: This paper examines the evolving relationship between press freedom
-          and democratic institutions in the Maharashtra region, drawing on a content analysis of 500 regional
-          newspaper articles published between 2018 and 2024. The study identifies structural patterns of
-          self-censorship and editorial interference, and argues that policy frameworks must be strengthened
-          to protect editorial independence at the regional level. The findings contribute to existing literature
-          on media governance in federal democracies with plural linguistic contexts.]
+          The COVID-19 pandemic has left a deep and lasting impact on the journalism and newspaper industry in Maharashtra. Newspapers have historically played a vital role in shaping public opinion, promoting democracy, and ensuring transparency in governance. Since the outbreak of COVID-19 in 2020, the media ecosystem — especially print journalism — has faced an unprecedented financial and operational crisis. This paper examines the key challenges including declining revenues, job losses, digital transition, and structural shifts in media consumption, and calls for coordinated policy support to sustain independent journalism in Maharashtra.
         </div>
         <div class="ae-keywords">
-          <strong>Keywords:</strong> [FILL: e.g., press freedom, Maharashtra media, journalism ethics, democratic governance, self-censorship]
+          <strong>Keywords:</strong> COVID-19, Maharashtra journalism, newspaper industry, print media crisis, digital transition, press freedom, media welfare
         </div>
         <div class="ae-keywords">
-          <strong>Received:</strong> <span class="fill-placeholder">[DD/MM/YYYY]</span>
-          &nbsp;|&nbsp;
-          <strong>Accepted:</strong> <span class="fill-placeholder">[DD/MM/YYYY]</span>
-          &nbsp;|&nbsp;
-          <strong>Published:</strong> <span class="fill-placeholder">[DD/MM/YYYY]</span>
+          <strong>Language:</strong> English &nbsp;|&nbsp;
+          <strong>Published:</strong> January 2026
         </div>
       </div>
       <div class="article-entry-footer">
-        <a class="btn-pdf" href="uploads/issues/vol1-issue1/article-001.pdf" target="_blank">
+        <a class="btn-pdf" href="generate-article-pdf?download" target="_blank">
           &#8964; Download PDF
         </a>
         <a class="btn-abstract" href="#art-001">View Full Abstract</a>
-        <span class="article-doi">DOI: <span class="fill-placeholder">[FILL: doi or leave blank]</span></span>
+        <span class="article-doi">DOI: <span class="fill-placeholder">[Pending]</span></span>
       </div>
     </div>
 
@@ -99,45 +83,36 @@
     <div class="article-entry" id="art-002">
       <div class="article-entry-header">
         <span class="ae-num">Article 2 of 5</span>
-        <span class="ae-pages">Pages: <span class="fill-placeholder">[e.g., 13–26]</span></span>
+        <span class="ae-pages">Pages: 11–22</span>
       </div>
       <div class="article-entry-body">
         <div class="ae-title">
-          [FILL: Article Title — e.g., The Role of Community Journalism in Rural Maharashtra: Challenges and Opportunities]
+          महाराष्ट्र से शुरू हुआ पत्रकार सुरक्षा कानून : पूरे भारत में लागू होना समय की मांग
         </div>
         <div class="ae-authors">
-          [FILL: Author Name(s)]
+          Adv. Akramkhan Abdulmajeedkhan Pathan
         </div>
         <div class="ae-affiliation">
-          [FILL: Department, Institution, City, Maharashtra, India]
+          Information Of Press Council of Maharashtra, Mumbai, Maharashtra, India
         </div>
         <div class="ae-abstract-label">Abstract</div>
         <div class="ae-abstract">
-          [FILL: Abstract of 150–250 words. Example: This study investigates the structural and operational
-          challenges confronting community-based journalism initiatives in rural Maharashtra. Through in-depth
-          interviews with 30 community journalists operating in Vidarbha and Marathwada, the research identifies
-          three critical impediments: inadequate digital infrastructure, absence of institutional support, and
-          linguistic marginalisation in mainstream editorial systems. The paper proposes a community media
-          framework integrating local governance bodies and district press councils to sustain independent
-          rural journalism.]
+          लोकतंत्र की मजबूती का आधार केवल संविधान या शासन व्यवस्था नहीं होता, बल्कि स्वतंत्र और निर्भीक पत्रकारिता भी उतनी ही महत्वपूर्ण होती है। महाराष्ट्र सरकार ने वर्ष 2017 में "Maharashtra Mediapersons and Media Institutions (Prevention of Violence and Damage or Loss to Property) Act, 2017" लागू किया — यह भारत का पहला ऐसा कानून है जो पत्रकारों की सुरक्षा सुनिश्चित करता है। यह लेख इस कानून की प्रमुख तरतूदों का विश्लेषण करता है और तर्क करता है कि इसे पूरे भारत में लागू करने की आवश्यकता है।
         </div>
         <div class="ae-keywords">
-          <strong>Keywords:</strong> [FILL: community journalism, rural media, Maharashtra, Vidarbha, press council]
+          <strong>Keywords:</strong> पत्रकार सुरक्षा, महाराष्ट्र, राष्ट्रीय कानून, लोकतंत्र, press freedom, journalist protection law
         </div>
         <div class="ae-keywords">
-          <strong>Received:</strong> <span class="fill-placeholder">[DD/MM/YYYY]</span>
-          &nbsp;|&nbsp;
-          <strong>Accepted:</strong> <span class="fill-placeholder">[DD/MM/YYYY]</span>
-          &nbsp;|&nbsp;
-          <strong>Published:</strong> <span class="fill-placeholder">[DD/MM/YYYY]</span>
+          <strong>Language:</strong> Hindi &nbsp;|&nbsp;
+          <strong>Published:</strong> January 2026
         </div>
       </div>
       <div class="article-entry-footer">
-        <a class="btn-pdf" href="uploads/issues/vol1-issue1/article-002.pdf" target="_blank">
+        <a class="btn-pdf" href="generate-article-pdf-2?download" target="_blank">
           &#8964; Download PDF
         </a>
         <a class="btn-abstract" href="#art-002">View Full Abstract</a>
-        <span class="article-doi">DOI: <span class="fill-placeholder">[FILL: doi or leave blank]</span></span>
+        <span class="article-doi">DOI: <span class="fill-placeholder">[Pending]</span></span>
       </div>
     </div>
 
@@ -147,46 +122,36 @@
     <div class="article-entry" id="art-003">
       <div class="article-entry-header">
         <span class="ae-num">Article 3 of 5</span>
-        <span class="ae-pages">Pages: <span class="fill-placeholder">[e.g., 27–40]</span></span>
+        <span class="ae-pages">Pages: 23–32</span>
       </div>
       <div class="article-entry-body">
         <div class="ae-title">
-          [FILL: Article Title — e.g., Digital Misinformation and Its Impact on Electoral Reporting: Evidence from Maharashtra Assembly Elections]
+          पत्रकार सुरक्षा कायदा : लोकशाहीच्या चौथ्या स्तंभाचे संरक्षण
         </div>
         <div class="ae-authors">
-          [FILL: Author Name(s)]
+          Adv. Iliyas Abdulmajeed Khan
         </div>
         <div class="ae-affiliation">
-          [FILL: Department, Institution, City, Maharashtra, India]
+          Information Of Press Council of Maharashtra, Mumbai, Maharashtra, India
         </div>
         <div class="ae-abstract-label">Abstract</div>
         <div class="ae-abstract">
-          [FILL: Abstract of 150–250 words. Example: The proliferation of digital misinformation constitutes
-          one of the most pressing challenges to credible electoral reporting in contemporary democratic
-          systems. This paper undertakes a systematic analysis of WhatsApp-circulated content during the
-          2024 Maharashtra Assembly Elections, identifying 214 verified instances of politically motivated
-          false information. Using a combination of computational content analysis and journalistic source
-          verification protocols, the study constructs a misinformation typology and evaluates the response
-          capacity of the regional press ecosystem. Recommendations are offered for press councils and media
-          regulatory bodies.]
+          लोकशाही व्यवस्थेत पत्रकारिता हा समाजाचा चौथा स्तंभ मानला जातो. गेल्या काही वर्षांत पत्रकारांवर होणाऱ्या हल्ल्यांच्या घटनांमध्ये वाढ झाल्यामुळे पत्रकारांच्या सुरक्षेचा प्रश्न गंभीर बनला आहे. महाराष्ट्र राज्याने पत्रकारांच्या संरक्षणासाठी "Maharashtra Mediapersons and Media Institutions (Prevention of Violence and Damage or Loss to Property) Act, 2017" हा कायदा लागू केला. महाराष्ट्र हे असा स्वतंत्र कायदा करणारे देशातील पहिले राज्य ठरले. पत्रकारांचे संरक्षण म्हणजे लोकशाहीचे संरक्षण होय असे प्रतिपादन या अभ्यासात केले आहे.
         </div>
         <div class="ae-keywords">
-          <strong>Keywords:</strong> [FILL: misinformation, electoral journalism, Maharashtra elections, digital media, press regulation]
+          <strong>Keywords:</strong> पत्रकार सुरक्षा, लोकशाही, महाराष्ट्र, मीडिया कायदा, पत्रकारिता, press freedom, journalist protection
         </div>
         <div class="ae-keywords">
-          <strong>Received:</strong> <span class="fill-placeholder">[DD/MM/YYYY]</span>
-          &nbsp;|&nbsp;
-          <strong>Accepted:</strong> <span class="fill-placeholder">[DD/MM/YYYY]</span>
-          &nbsp;|&nbsp;
-          <strong>Published:</strong> <span class="fill-placeholder">[DD/MM/YYYY]</span>
+          <strong>Language:</strong> Marathi &nbsp;|&nbsp;
+          <strong>Published:</strong> January 2026
         </div>
       </div>
       <div class="article-entry-footer">
-        <a class="btn-pdf" href="uploads/issues/vol1-issue1/article-003.pdf" target="_blank">
+        <a class="btn-pdf" href="generate-article-pdf-3?download" target="_blank">
           &#8964; Download PDF
         </a>
         <a class="btn-abstract" href="#art-003">View Full Abstract</a>
-        <span class="article-doi">DOI: <span class="fill-placeholder">[FILL: doi or leave blank]</span></span>
+        <span class="article-doi">DOI: <span class="fill-placeholder">[Pending]</span></span>
       </div>
     </div>
 
@@ -196,45 +161,35 @@
     <div class="article-entry" id="art-004">
       <div class="article-entry-header">
         <span class="ae-num">Article 4 of 5</span>
-        <span class="ae-pages">Pages: <span class="fill-placeholder">[e.g., 41–55]</span></span>
+        <span class="ae-pages">Pages: 33–44</span>
       </div>
       <div class="article-entry-body">
         <div class="ae-title">
-          [FILL: Article Title — e.g., Media Ethics and the Representation of Marginalised Communities in Marathi-Language Newspapers]
+          महाराष्ट्र राज्यातील पत्रकारांशी संबंधित सुरक्षा कायदा आणि उपाय
         </div>
         <div class="ae-authors">
-          [FILL: Author Name(s)]
+          Vjay Harakchand Saklecha
         </div>
         <div class="ae-affiliation">
-          [FILL: Department, Institution, City, Maharashtra, India]
+          Information Of Press Council of Maharashtra, Mumbai, Maharashtra, India
         </div>
         <div class="ae-abstract-label">Abstract</div>
         <div class="ae-abstract">
-          [FILL: Abstract of 150–250 words. Example: Ethical obligations of the regional press towards
-          marginalised social groups — including Adivasi communities, OBC populations, and religious
-          minorities — remain inadequately theorised in South Asian journalism studies. This article evaluates
-          the representation practices of five major Marathi-language newspapers across a 12-month period,
-          applying a critical discourse analysis framework informed by postcolonial media theory. The findings
-          reveal persistent stereotyping, source imbalance, and structural exclusion in coverage patterns.
-          Institutional reforms within regional press councils are proposed as corrective mechanisms.]
+          लोकशाही व्यवस्थेत पत्रकारिता ही चौथा स्तंभ मानली जाते. महाराष्ट्र राज्याने "Maharashtra Mediapersons and Media Institutions (Prevention of Violence and Damage or Loss to Property) Act, 2017" हा विशेष कायदा लागू केला. या कायद्यामुळे पत्रकारांवर हल्ला करणे हा गंभीर, cognizable आणि non-bailable गुन्हा ठरतो. या अभ्यासात कायद्याच्या प्रमुख तरतुदी, अंमलबजावणीतील समस्या आणि पत्रकार सुरक्षा अधिक मजबूत करण्यासाठी उपाय विश्लेषित केले आहेत. विशेष तपास पथक, डिजिटल पत्रकारांचे संरक्षण आणि राज्यस्तरीय Journalist Protection Authority स्थापन करणे हे प्रमुख उपाय सुचवले आहेत.
         </div>
         <div class="ae-keywords">
-          <strong>Keywords:</strong> [FILL: media ethics, Marathi press, marginalised communities, representation, discourse analysis]
+          <strong>Keywords:</strong> पत्रकार सुरक्षा, महाराष्ट्र कायदा 2017, लोकशाही, मीडिया संरक्षण, डिजिटल पत्रकारिता, press freedom
         </div>
         <div class="ae-keywords">
-          <strong>Received:</strong> <span class="fill-placeholder">[DD/MM/YYYY]</span>
-          &nbsp;|&nbsp;
-          <strong>Accepted:</strong> <span class="fill-placeholder">[DD/MM/YYYY]</span>
-          &nbsp;|&nbsp;
-          <strong>Published:</strong> <span class="fill-placeholder">[DD/MM/YYYY]</span>
+          <strong>Language:</strong> Marathi &nbsp;|&nbsp;
+          <strong>Published:</strong> January 2026
         </div>
       </div>
       <div class="article-entry-footer">
-        <a class="btn-pdf" href="uploads/issues/vol1-issue1/article-004.pdf" target="_blank">
+        <a class="btn-pdf" href="generate-article-pdf-4?download" target="_blank">
           &#8964; Download PDF
         </a>
         <a class="btn-abstract" href="#art-004">View Full Abstract</a>
-        <span class="article-doi">DOI: <span class="fill-placeholder">[FILL: doi or leave blank]</span></span>
       </div>
     </div>
 

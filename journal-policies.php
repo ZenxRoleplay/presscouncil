@@ -43,14 +43,14 @@
           All rights reserved.
         </p>
         <p>
-          Authors of articles published in the <em>Press Council of Maharashtra Journal</em> retain copyright
+          Authors of articles published in the <em>Information Of Press Council of Maharashtra Journal</em> retain copyright
           in their work. By submitting a manuscript, authors grant the Press Council of Maharashtra (PCM)
           the right of first publication of the work under the terms of the applicable open-access licence
           (see Open Access Statement below).
         </p>
         <p>
           After publication, authors may reproduce their work in other publications, provided that the
-          <em>Press Council of Maharashtra Journal</em> is acknowledged as the original venue of publication,
+          <em>Information Of Press Council of Maharashtra Journal</em> is acknowledged as the original venue of publication,
           with a full citation including volume, issue, and page numbers.
         </p>
         <p>
@@ -60,7 +60,7 @@
         </p>
         <p>
           Permission requests may be addressed to:<br>
-          <strong>Editorial Office, Press Council of Maharashtra</strong><br>
+          <strong>Editorial Office, Information Of Press Council of Maharashtra</strong><br>
           Email: <a href="mailto:editor@presscouncil.in">editor@presscouncil.in</a>
         </p>
       </div>

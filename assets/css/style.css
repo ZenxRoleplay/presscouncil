@@ -83,44 +83,55 @@ header img.logo {
   text-align: center;
 }
 .header-text {
-  font-family: var(--font-heading);
-  font-size: clamp(18px, 2.4vw, 28px);
+  font-family: var(--font-body);
+  font-size: clamp(20px, 2.6vw, 32px);
   font-weight: 700;
   color: var(--white);
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
   line-height: 1.2;
 }
 .header-text-devnagri {
   font-family: 'Noto Sans Devanagari', sans-serif;
-  font-size: clamp(12px, 1.2vw, 15px);
+  font-size: clamp(12px, 1.15vw, 15px);
   color: var(--gold-light);
-  margin: 5px 0 0;
+  margin: 6px 0 0;
   font-weight: 500;
-  letter-spacing: 0.5px;
-}
-.header-divider {
-  width: 50px;
-  height: 1px;
-  background: rgba(200,168,75,0.4);
-  margin: 7px auto 6px;
+  letter-spacing: 0.4px;
 }
 .header-tagline {
   font-family: var(--font-body);
   font-size: clamp(10px, 0.85vw, 11.5px);
-  color: rgba(255,255,255,0.5);
-  letter-spacing: 0.7px;
-  margin-top: 0;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.6px;
+  margin-top: 7px;
 }
-.header-journal-title {
+/* Publication title gold strip */
+.header-pub-strip {
+  background: var(--gold);
+  text-align: center;
+  padding: 10px 24px;
+  letter-spacing: 0.3px;
+  border-top: 2px solid rgba(0,0,0,0.12);
+}
+.header-pub-strip-label {
   font-family: var(--font-body);
-  font-size: clamp(10px, 0.95vw, 13px);
-  color: var(--gold-light);
-  letter-spacing: 0.5px;
-  font-style: italic;
-  margin-top: 3px;
-  opacity: 0.85;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy-dark);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  opacity: 0.6;
 }
-.header-text, .header-text-devnagri, .header-tagline, .header-journal-title { word-break: break-word; white-space: normal; }
+.header-pub-strip-title {
+  font-family: var(--font-body);
+  font-size: clamp(15px, 1.8vw, 20px);
+  font-weight: 800;
+  color: var(--navy-dark);
+  letter-spacing: 0.2px;
+}
+.header-text, .header-text-devnagri, .header-tagline, .header-pub-strip-title { word-break: break-word; white-space: normal; }
+.header-divider { display: none; }
+.header-journal-title { display: none; }
 
 /* Right badges */
 .header-badges {

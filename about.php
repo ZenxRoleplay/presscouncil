@@ -118,7 +118,7 @@ if (file_exists($aboutJsonPath)) {
       </div>
       <div class="jib-row">
         <div class="jib-label">Starting Year</div>
-        <div class="jib-value">2025</div>
+        <div class="jib-value">2026</div>
       </div>
       <div class="jib-row">
         <div class="jib-label">Publication Frequency</div>

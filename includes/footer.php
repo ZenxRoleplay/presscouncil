@@ -47,7 +47,7 @@ $visitorCount = file_exists(dirname(__DIR__) . '/data/counter.txt') ? file_get_c
       <h4>Journal Details</h4>
       <p>
         ISSN (Online):&nbsp;<span style="color:#ffe07a;font-style:italic;">Applied for / Pending</span><br>
-        Starting Year:&nbsp;<strong>2025</strong><br>
+        Starting Year:&nbsp;<strong>2026</strong><br>
         Frequency:&nbsp;<strong>Quarterly</strong><br>
         Language:&nbsp;English / Marathi<br>
         Format:&nbsp;<strong>Online</strong>

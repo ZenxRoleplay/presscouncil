@@ -12,6 +12,7 @@
   <div class="dropdown">
     <button class="dropbtn">Journal ▼</button>
     <div class="dropdown-content">
+      <a href="journal-info">About the Journal</a>
       <a href="editorial-board">Editorial Board</a>
       <a href="volume-1-issue-1">Vol. 1, Issue 1 (Current)</a>
       <a href="journal-policies">Policies &amp; Ethics</a>
